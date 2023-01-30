@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="banner">
+        Redis Link Shortener
+      </div>
+      <div className='link-url-box'>
+        <form>
+          <input placeholder='Paste URL here!'/>
+        </form>
+      </div>
+      <div className='link-url-box-button'>
+        <button type='submit'>Submit</button>
+      </div>
+      <div className='shortened-link'>
+        Your Shortened URL is: 
+      </div>
     </div>
   );
 }
